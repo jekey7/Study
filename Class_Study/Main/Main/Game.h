@@ -8,10 +8,14 @@ private:
 	string Name;
 	int Age;
 	string Genre;
-	int PlayTime;
+	string PlayTime;
 public:
-	Game(string& GameName, int _Age, string _Genre, int _PlayTime);
+	Game();
 	~Game();
+	string GameName();
+	string GameGenre();
+	string GamePlayTime();
+	void Input(int _Age);
 	virtual void Play();
 };
 

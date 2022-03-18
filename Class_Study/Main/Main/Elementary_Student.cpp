@@ -1,15 +1,26 @@
 #include "Elementary_Student.h"
 
-Elementary_Student::Elementary_Student(string& GameName, int _Age, string& _Genre, int _PlayTime) : Game(_GameName, _Age, _Genre, _PlayTime)
-{
-
-}
-
-Elementary_Student::~Elementary_Student()
-{
-}
-
 void Elementary_Student::Play()
 {
-	cout << "Virtual Func Test" << "\n";
+	cout << "  게임 이름 : " << GameName() << "\n";
+	cout << "  게임 장르 : " << GameGenre() << "\n";
+	cout << "플레이 타임 : " << GamePlayTime() << "\n";
+	if (GameName() == "Minecraft") {
+		cout << "                                \n";
+		cout << "          □    ■■■■■■■  \n";
+		cout << "        □□□  ■□□□□□■  \n";
+		cout << "        □□□  ■□□  □□■  \n";
+		cout << "  □      ■    ■□□□□□■  \n";
+		cout << "  ■      ■    ■□□□□□■  \n";
+		cout << "■■■■■■■■■■■■■■■■\n";
+	}
+	else if (GameName() == "League of Legends") {
+		cout << "                    ■          \n";
+		cout << "                    □  ■■■  \n";
+		cout << "                    □■■■■  \n";
+		cout << "                    □  ■□■  \n";
+		cout << "            □      □  ■□■  \n";
+		cout << "            ■      □  ■□■  \n";
+		cout << "■■■■■■■■■■■■■■■■\n";
+	}
 }

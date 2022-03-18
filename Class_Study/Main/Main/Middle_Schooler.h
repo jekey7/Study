@@ -1,5 +1,9 @@
 #pragma once
-class Middle_Schooler
+#include "Game.h"
+#include <iostream>
+class Middle_Schooler : public Game
 {
+public:
+	virtual void Play();
 };
 

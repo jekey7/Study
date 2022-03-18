@@ -156,12 +156,14 @@
     <ClCompile Include="High_School_Student.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Middle_Schooler.cpp" />
+    <ClCompile Include="University.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Elementary_Student.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="High_School_Student.h" />
     <ClInclude Include="Middle_Schooler.h" />
+    <ClInclude Include="University.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
